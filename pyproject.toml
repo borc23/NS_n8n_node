@@ -1,0 +1,25 @@
+[project]
+name = "custom-node"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Bor Cerne", email = "borc23@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+custom-node = "custom_node:main"
+
+[build-system]
+requires = ["uv_build>=0.12.22,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "notebook>=7.5.5",
+    "pre-commit>=4.3.0",
+    "pytest>=8.0.0",
+    "pytest-cov>=5.0.0",
+]
